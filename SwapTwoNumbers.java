@@ -21,9 +21,13 @@ public class SwapTwoNumbers {
 //        a=a/b; //200 / 10 =20
 
         //Bitwise XOR(^)
-        a=a^b;
-        b=a^b;
-        a=a^b;
+//        a=a^b;
+//        b=a^b;
+//        a=a^b;
+
+        //Single Statement
+
+        b=a+b-(a=b);
 
         System.out.println("AfterSwapping values are "+a+" and "+b);
     }
