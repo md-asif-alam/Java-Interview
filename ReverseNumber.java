@@ -11,9 +11,14 @@ public class ReverseNumber {
 //        }
 
         //2.Using StringBuffer class
-        StringBuffer rev;
-        StringBuffer sb=new StringBuffer(String.valueOf(num));
-        rev=sb.reverse();
+//        StringBuffer rev;
+//        StringBuffer sb=new StringBuffer(String.valueOf(num));
+//        rev=sb.reverse();
+
+        //3.Using String Builder
+        StringBuilder sbl=new StringBuilder();
+        sbl.append(num);
+        StringBuilder rev=sbl.reverse();
         System.out.println("Reverse of "+num+" is "+rev);
 
     }
