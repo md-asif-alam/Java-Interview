@@ -6,12 +6,18 @@ public class LargestOfThreeNum {
 
 
         //First Method
-        if(a>b && a>c){
-            System.out.println("a is largest");
-        }else if(b>a && b>c){
-            System.out.println("b is largest");
-        }else if(c>a && c>b){
-            System.out.println("c is largest");
-        }
+//        if(a>b && a>c){
+//            System.out.println("a is largest");
+//        }else if(b>a && b>c){
+//            System.out.println("b is largest");
+//        }else if(c>a && c>b){
+//            System.out.println("c is largest");
+//        }
+
+        //Second Method
+
+        int largest=a>b?a:b;
+        largest=largest>c?largest:c;
+        System.out.println("largest number is "+largest);
     }
 }
